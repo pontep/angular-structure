@@ -1,1 +1,36 @@
-<p>signin works!</p>
+<div>
+  <div style="width: 45vw; margin: auto">
+    <form [formGroup]="signInForm" (submit)="signIn()">
+      <p>
+        <mat-form-field
+        style="width: 100%;"
+        >
+          <input
+            matInput
+            formControlName="email"
+            type="text"
+            placeholder="Email"
+            autocomplete="off"
+          />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field
+        style="width: 100%;"
+        >
+          <input
+            matInput
+            formControlName="password"
+            type="password"
+            placeholder="Password"
+            autocomplete="off"
+
+          />
+        </mat-form-field>
+      </p>
+      <p>
+          <button mat-stroked-button type="submit" color="primary" style="width: 100%;">SignIn</button>
+      </p>
+    </form>
+  </div>
+</div>
