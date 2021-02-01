@@ -3,6 +3,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@data/*": ["src/app/data/*"]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -15,6 +18,6 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
   }
 }
