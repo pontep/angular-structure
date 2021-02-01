@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('./layout/app-layout/app-layout.component').then(m => m.AppLayoutComponent)
+        loadChildren: () => import('./layout/app-layout/app-layout.module').then(m => m.AppLayoutModule)
       }
     ],
     canActivate: [AuthenticationGuard]
@@ -22,7 +22,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('./layout/auth-layout/auth-layout.component').then(m => m.AuthLayoutComponent)
+        loadChildren: () => import('./layout/auth-layout/auth-layout.module').then(m => m.AuthLayoutModule)
       }
     ],
   }
