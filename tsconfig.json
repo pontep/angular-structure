@@ -4,7 +4,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@data/*": ["src/app/data/*"]
+      "@data/*": ["src/app/data/*"],
+      "@modules/*": ["src/app/modules"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
